@@ -22,3 +22,4 @@ C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Debug\NPOI.xml
 C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Debug\NPOI.OOXML.xml
 C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Debug\NPOI.OpenXml4Net.xml
 C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Debug\PrimerZP.csproj.CopyComplete
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Debug\PrimerZP.Preface.resources
