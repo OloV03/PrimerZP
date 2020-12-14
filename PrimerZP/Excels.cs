@@ -5,16 +5,18 @@ namespace PrimerZP
 {
     class Excels
     {
+        string path = @"C:\Users\homepc\source\repos\PrimerZP\index.txt";
+
+        // подстчет примерной недельной зарплаты
         public string Result()
         {
             DateTime date = DateTime.Now;
-            string path = @"C:\Users\homepc\source\repos\PrimerZP\index.txt";
             double a = (int)date.DayOfWeek; int price = 0;
             
             using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
             {
                 string line;
-                // проверяем количество пододящих 
+                // проверяем даты понтажей и суммируем необходимый прайс 
                 while ((line = sr.ReadLine()) != null)
                 {
                     var i = DateTime.ParseExact(line.Substring(0, 10), "dd.MM.yyyy", null);
@@ -23,8 +25,19 @@ namespace PrimerZP
                         price += Convert.ToInt32(line.Substring(15));
                     }
                 }
+                sr.Close();
             }
-            return Convert.ToString(price*0.15);
+            return Convert.ToString(price);
+        }
+
+        // добавление данных в "базу"
+        public void EnterData(string line)
+        {
+            using (StreamWriter sw = new StreamWriter(path, true, System.Text.Encoding.Default))
+            {
+                sw.Write(line);
+                sw.Close();
+            }
         }
     }
 }
