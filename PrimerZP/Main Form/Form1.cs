@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PrimerZP
 {
@@ -167,6 +168,18 @@ namespace PrimerZP
         private void labelHint3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+
+            Settings set = new Settings();
+            set.ShowDialog();
         }
     }
 }

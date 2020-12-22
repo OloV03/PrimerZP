@@ -7,6 +7,7 @@ namespace PrimerZP
     public partial class Preface : Form
     {
         Excels ex = new Excels();
+        
         public Preface()
         {
             InitializeComponent();

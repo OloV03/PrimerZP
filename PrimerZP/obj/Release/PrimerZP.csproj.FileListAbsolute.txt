@@ -1,0 +1,25 @@
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\Примерная зарплата.exe.config
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\Примерная зарплата.exe
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\Примерная зарплата.pdb
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\NPOI.dll
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\NPOI.OOXML.dll
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\NPOI.OpenXml4Net.dll
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\NPOI.OpenXmlFormats.dll
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\BouncyCastle.Crypto.xml
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\ICSharpCode.SharpZipLib.pdb
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\ICSharpCode.SharpZipLib.xml
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\NPOI.xml
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\NPOI.OOXML.xml
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Release\NPOI.OpenXml4Net.xml
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\PrimerZP.csprojAssemblyReference.cache
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\PrimerZP.csproj.ResolveComReference.cache
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\PrimerZP.Main.resources
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\PrimerZP.Preface.resources
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\PrimerZP.Properties.Resources.resources
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\PrimerZP.csproj.GenerateResource.cache
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\PrimerZP.csproj.CoreCompileInputs.cache
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\PrimerZP.csproj.CopyComplete
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\Примерная зарплата.exe
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Release\Примерная зарплата.pdb

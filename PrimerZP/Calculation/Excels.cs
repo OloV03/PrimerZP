@@ -5,8 +5,8 @@ namespace PrimerZP
 {
     class Excels
     {
-        public string goal = "175.000";        
-        string path = @"C:\Users\homepc\source\repos\PrimerZP\index.txt";
+        public string goal = "0";
+        string path = @"..\..\index.txt";
 
         // подстчет примерной недельной зарплаты
         public string Result(DateTime date)
@@ -22,7 +22,7 @@ namespace PrimerZP
                     var i = DateTime.ParseExact(line.Substring(0, 10), "dd.MM.yyyy", null);
                     if (i >= date.AddDays(-a) && i <= date.AddDays(6 - a))
                     {
-                        price += Convert.ToInt32(line.Substring(15));
+                        price += Convert.ToInt32(line.Substring(17));
                     }
                 }
                 sr.Close();

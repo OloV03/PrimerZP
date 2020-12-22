@@ -52,8 +52,12 @@
             this.label2WeekEnd = new System.Windows.Forms.Label();
             this.label2WeekStart = new System.Windows.Forms.Label();
             this.labelMotivation = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.settings = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -351,6 +355,45 @@
             this.labelMotivation.TabIndex = 8;
             this.labelMotivation.Click += new System.EventHandler(this.label6_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.Window;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.settings);
+            this.panel3.Location = new System.Drawing.Point(4, 647);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(722, 30);
+            this.panel3.TabIndex = 9;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // settings
+            // 
+            this.settings.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.settings.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Bold);
+            this.settings.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.settings.Location = new System.Drawing.Point(36, -1);
+            this.settings.Name = "settings";
+            this.settings.Size = new System.Drawing.Size(95, 30);
+            this.settings.TabIndex = 0;
+            this.settings.Text = "Настройки";
+            this.settings.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.settings.UseVisualStyleBackColor = false;
+            this.settings.Click += new System.EventHandler(this.settings_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Bold);
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.Location = new System.Drawing.Point(582, -1);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(95, 30);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Фигнюшка";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 32F);
@@ -358,6 +401,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(732, 680);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.labelMotivation);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -377,6 +421,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,6 +452,9 @@
         private System.Windows.Forms.Label labelHint2;
         private System.Windows.Forms.Label labelHint1;
         private System.Windows.Forms.Label labelMotivation;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button settings;
+        private System.Windows.Forms.Button button4;
     }
 }
 
