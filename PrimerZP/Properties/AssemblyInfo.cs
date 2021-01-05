@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("PrimerZP")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Примерная зарплата")]
+[assembly: AssemblyDescription("Программа для подсчета примерной недельной зарплаты")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HP Inc.")]
-[assembly: AssemblyProduct("PrimerZP")]
+[assembly: AssemblyCompany("Ilyha")]
+[assembly: AssemblyProduct("Зарплата")]
 [assembly: AssemblyCopyright("Copyright © HP Inc. 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

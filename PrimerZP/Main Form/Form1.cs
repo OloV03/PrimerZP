@@ -97,6 +97,12 @@ namespace PrimerZP
             Excels ex = new Excels();
             ex.EnterData(line);
         }
+        // кнопка настроек
+        private void settings_Click(object sender, EventArgs e)
+        {
+            Settings set = new Settings();
+            set.ShowDialog();
+        }
 
 
 
@@ -173,13 +179,6 @@ namespace PrimerZP
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void settings_Click(object sender, EventArgs e)
-        {
-
-            Settings set = new Settings();
-            set.ShowDialog();
         }
     }
 }

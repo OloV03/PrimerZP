@@ -5,15 +5,15 @@ namespace PrimerZP
 {
     class Excels
     {
-        public string goal = "0";
-        string path = @"..\..\index.txt";
+        public string goal = Properties.Settings.Default.goal;
+        string pathJukov = @"Jukov.txt";
 
         // подстчет примерной недельной зарплаты
         public string Result(DateTime date)
         {
             double a = (int)date.DayOfWeek; int price = 0;a--;
             
-            using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
+            using (StreamReader sr = new StreamReader(pathJukov, System.Text.Encoding.Default))
             {
                 string line;
                 // проверяем даты понтажей и суммируем необходимый прайс 
@@ -33,7 +33,7 @@ namespace PrimerZP
         // добавление данных в "базу"
         public void EnterData(string line)
         {
-            using (StreamWriter sw = new StreamWriter(path, true, System.Text.Encoding.Default))
+            using (StreamWriter sw = new StreamWriter(pathJukov, true, System.Text.Encoding.Default))
             {
                 sw.Write(line);
                 sw.Close();

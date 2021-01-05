@@ -22,3 +22,4 @@ C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Debug\Примерная за
 C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Debug\Примерная зарплата.exe.manifest
 C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Debug\Примерная зарплата.application
 C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Debug\PrimerZP.Settings.resources
+C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Debug\Jukov.txt
