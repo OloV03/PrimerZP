@@ -23,3 +23,28 @@ C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Debug\Примерная за
 C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Debug\Примерная зарплата.application
 C:\Users\homepc\source\repos\PrimerZP\PrimerZP\obj\Debug\PrimerZP.Settings.resources
 C:\Users\homepc\source\repos\PrimerZP\PrimerZP\bin\Debug\Jukov.txt
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\Jukov.txt
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\Примерная зарплата.exe.config
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\Примерная зарплата.exe.manifest
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\Примерная зарплата.application
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\Примерная зарплата.exe
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\Примерная зарплата.pdb
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\NPOI.xml
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\NPOI.OOXML.xml
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\bin\Debug\NPOI.OpenXml4Net.xml
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\PrimerZP.csprojAssemblyReference.cache
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\PrimerZP.csproj.ResolveComReference.cache
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\PrimerZP.Main.resources
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\PrimerZP.Preface.resources
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\PrimerZP.Properties.Resources.resources
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\PrimerZP.Settings.resources
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\PrimerZP.csproj.GenerateResource.cache
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\PrimerZP.csproj.CoreCompileInputs.cache
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\Примерная зарплата.exe.manifest
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\Примерная зарплата.application
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\PrimerZP.csproj.CopyComplete
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\Примерная зарплата.exe
+C:\Users\homepc\source\repos\OloV03\PrimerZP(Vladimir)\PrimerZP\obj\Debug\Примерная зарплата.pdb

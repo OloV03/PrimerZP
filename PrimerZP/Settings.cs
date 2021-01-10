@@ -10,6 +10,8 @@ namespace PrimerZP
         public Settings()
         {
             InitializeComponent();
+            radioWord.Checked = !Properties.Settings.Default.govno;
+            radioMoney.Checked = Properties.Settings.Default.govno;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -87,6 +89,19 @@ namespace PrimerZP
         private void montages_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void radioWord_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.govno = !radioWord.Checked;
+        }
+
+        private void radioMoney_CheckedChanged(object sender, EventArgs e)
+        {
         }
     }
 }

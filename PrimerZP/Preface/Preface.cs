@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Threading;
+using System.Globalization;
 
 namespace PrimerZP
 {
     public partial class Preface : Form
-    {
-        Excels ex = new Excels();
-        
+    {        
         public Preface()
         {
             InitializeComponent();
-            textBox_Preface.Text = $"Твоя цель: \n{ex.goal} руб";
-            
+
+            textBox_Preface.Text = $"Моя цель: \n{Properties.Settings.Default.goal} руб";
         }
 
         private void Preface_Load(object sender, EventArgs e)

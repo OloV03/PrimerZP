@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Примерная зарплата.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Примерная зарплата.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Примерная зарплата" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -114,33 +114,33 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Примерная зарплата.exe" size="43440">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Примерная зарплата.exe" size="44976">
       <assemblyIdentity name="Примерная зарплата" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xF5pI2lo6fqslnTBRivohBsv0wM1nPBfUYcni4f1DxM=</dsig:DigestValue>
+        <dsig:DigestValue>3zX3VPYEm2aT7IBIY3XwRfGL3npNg8jpJ7n/TjqO8PU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Jukov.txt" size="117">
+  <file name="Jukov.txt" size="140">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>msJmA3ajKMfsBLwORkZjLUczceGu2lA1vXHAmAA8vdE=</dsig:DigestValue>
+      <dsig:DigestValue>ZyC4lAqW6XFVvxJxoP7z5oo0+NC09XzfQ8p4+Hflk78=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Примерная зарплата.exe.config" size="1229">
+  <file name="Примерная зарплата.exe.config" size="1348">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ljsFRvJzKpx2n+qlE5bu6y60RcEkTBkbpHtT4HWSyio=</dsig:DigestValue>
+      <dsig:DigestValue>n1bsRfkTijTiav39hS1ZIGxcmaxqt87PcLPX2ENsc8A=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

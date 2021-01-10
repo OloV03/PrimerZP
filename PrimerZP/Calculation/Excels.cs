@@ -28,6 +28,7 @@ namespace PrimerZP
                 sr.Close();
             }
             return Convert.ToString(price);
+            
         }
 
         // добавление данных в "базу"
@@ -45,11 +46,14 @@ namespace PrimerZP
         {
             string result = "";
             int x = Int32.Parse(goal.Replace(".", "")) / 4;
+
+            // выбраны подсказки с "словами"
+            if (!Properties.Settings.Default.govno) { 
             if (price > x)
             {
                 if ((price - x) > 10000)
                 {
-                    result = "Да ты просто красавец, Вауся! \nБолее 5000 сверх требуемого!";
+                    result = $"Да ты просто красавец, Вауся! \n{price-x} сверх требуемого!";
                 }
                 if ((price - x) > 1000 && (price - x) < 10000)
                 {
@@ -68,18 +72,35 @@ namespace PrimerZP
             {
                 if ((x - price) > 10000)
                 {
-                   result = "Явно не твоя неделя";
+                    result = "Явно не твоя неделя";
                 }
                 if ((x - price) > 1000 && (x - price) < 5000)
                 {
-                    result = "Нехватает совсем малость, поднажми малость";
+                    result = "Немного не хватает, поднажми малость";
                 }
                 if ((x - price) < 1000)
                 {
                     result = "Ай, ну как так, такие пустяки остались";
                 }
             }
+            }
+            // выбраны подсказки с "деньгами"
+            else {
+                if (price > x)
+                {
+                    result = $"Превышение цели на {price - x} рублей. \nТак держать!";
+                }
+                else if (x == price)
+                {
+                    result = "Тютелька в Тютельку!";
+                }
+                else if (x > price)
+                {
+                    result = $"До цели не хватает {x - price} рублей. \nПоднажми немного!";
 
+                }
+            }
+            
             return result;
         }
     }

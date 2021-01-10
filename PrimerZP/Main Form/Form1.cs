@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using System.IO;
+using System.Globalization;
 
 namespace PrimerZP
 {
@@ -10,6 +10,10 @@ namespace PrimerZP
         Excels ex = new Excels();
         public Main()
         {
+            var culture = new CultureInfo("ru-RU")
+            {
+                NumberFormat = { NumberGroupSeparator = ".", },
+            };
             // загрузка "цели"
             Preface load = new Preface();
             load.ShowDialog();
@@ -17,11 +21,11 @@ namespace PrimerZP
 
             InitializeComponent();
             // мотивация
-            labelMotivation.Text = $"Для достижения цели необходимо\n\t{x} руб в неделю";
+            labelMotivation.Text = $"Для достижения цели необходимо\n\t{x.ToString("#,#",culture)} руб в неделю";
         }
 
         // кнопка "Показать зарплату"
-        private void button1_Click(object sender, EventArgs e)
+        protected internal void button1_Click(object sender, EventArgs e)
         {
             // проверка, не открыто ли другое окно
             if (panel1.Visible == true)
