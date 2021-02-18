@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace PrimerZP
 {
@@ -7,6 +8,7 @@ namespace PrimerZP
     {
         public string goal = Properties.Settings.Default.goal;
         string pathJukov = @"Jukov.txt";
+
 
         // подстчет примерной недельной зарплаты
         public string Result(DateTime date)
@@ -19,10 +21,10 @@ namespace PrimerZP
                 // проверяем даты понтажей и суммируем необходимый прайс 
                 while ((line = sr.ReadLine()) != null)
                 {
-                    var i = DateTime.ParseExact(line.Substring(0, 10), "dd.MM.yyyy", null);
-                    if (i >= date.AddDays(-a) && i <= date.AddDays(6 - a))
+                    var i = DateTime.ParseExact(line.Substring(0, 5), "dd.MM", null);
+                    if (i >= date.AddDays(-a-1) && i <= date.AddDays(6 - a))
                     {
-                        price += Convert.ToInt32(line.Substring(17));
+                        price += Convert.ToInt32(line.Substring(12));
                     }
                 }
                 sr.Close();
@@ -103,5 +105,85 @@ namespace PrimerZP
             
             return result;
         }
+
+        // демонстрация закрытых монтажей
+        public string Montages(DateTime date, bool stop)
+        {
+            string res = "";
+            double a = (int)date.DayOfWeek; a--;
+
+            using (StreamReader sr = new StreamReader(pathJukov, System.Text.Encoding.Default))
+            {
+                string line;
+                // проверяем даты понтажей и выводим прошедшие 
+                while (stop != true)
+                {
+                    line = sr.ReadLine();
+                    var i = DateTime.ParseExact(line.Substring(0, 5), "dd.MM", null);
+                    if (i >= date.AddDays(-a - 1) && i <= date.AddDays(6 - a))
+                    {
+                        res += $"asd";   
+                    }
+                }
+                sr.Close();
+            }
+            return res;
+        }
+
+        // поиск даты искомого монтажа (через номер договора)
+        public string FindMontage(string number)
+        {
+            string res = "Prikol";
+
+            using (StreamReader sr = new StreamReader("Jukov.txt", System.Text.Encoding.Default))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    if (line.Substring(6, 5) == number) 
+                    {
+                        res = line.Substring(0, 5);
+                        break;
+                    } 
+                }
+                sr.Close();
+            }
+            return res;
+        }
+
+        // поиск даты искомого монтажа (через дату)
+        public string FindMontage(DateTime date)
+        {
+            string res = "";
+
+            using (StreamReader sr = new StreamReader("Jukov.txt", System.Text.Encoding.Default))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    if (line.Substring(0, 5) == date.ToString("dd.MM"))
+                    {
+                        res += line.Substring(0, 5) + $" №{line.Substring(6,5)}\n";
+                    }
+                }
+                sr.Close();
+            }
+            return res;
+        }
+
+        // смена даты монтажа
+        public void ChangeDateMontage(string searchText, string replaceText)
+        {
+            StreamReader reader = new StreamReader(pathJukov);
+            string content = reader.ReadToEnd();
+            reader.Close();
+
+            content = Regex.Replace(content, searchText, replaceText);
+
+            StreamWriter writer = new StreamWriter(pathJukov);
+            writer.Write(content);
+            writer.Close();
+        }
+
     }
 }

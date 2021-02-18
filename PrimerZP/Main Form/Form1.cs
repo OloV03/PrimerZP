@@ -7,6 +7,7 @@ namespace PrimerZP
 {
     public partial class Main : Form
     {
+        bool check = false;
         Excels ex = new Excels();
         public Main()
         {
@@ -22,19 +23,18 @@ namespace PrimerZP
             InitializeComponent();
             // мотивация
             labelMotivation.Text = $"Для достижения цели необходимо\n\t{x.ToString("#,#",culture)} руб в неделю";
+
+            panelShowMont.Location = new System.Drawing.Point(360,100);
+            panelShowMont.Height = 1129;
+            panelShowMont.Width = 500;
         }
 
         // кнопка "Показать зарплату"
         protected internal void button1_Click(object sender, EventArgs e)
         {
             // проверка, не открыто ли другое окно
-            if (panel1.Visible == true)
-            {
-                panel1.Visible = false;
-                close2.Visible = false;
-            }
-            panel2.Visible = true;
-            button3.Visible = true;
+            CheckOpen();
+            panel2.Visible = true; button3.Visible = true; check = true;
 
             DateTime date = DateTime.Now;          // дата для получения текущей недели
             double a = (int)date.DayOfWeek; a--;
@@ -51,7 +51,7 @@ namespace PrimerZP
 
 
             // Устанавливаем значение полей "следующая неделя"
-            label2WeekStart.Text = "\tНеделя \"+ 1\"\n" + date.AddDays(7-a).ToString("M") +
+            label2WeekStart.Text = "\tСледующая неделя\n" + date.AddDays(7-a).ToString("M") +
                                 " - " + date.AddDays(13 - a).ToString("M");
 
             label2WeekEnd.Text = $"Ожидаемая зарплата  \n~{ex.Result(date1)} руб~";
@@ -59,7 +59,7 @@ namespace PrimerZP
 
 
             // Устанавливаем значение полей "черер 2 недели"
-            label3WeekStart.Text = "\tНеделя \"+ 2\"\n" + date.AddDays(14 - a).ToString("M") +
+            label3WeekStart.Text = "\tЧерез неделю\n" + date.AddDays(14 - a).ToString("M") +
                                 " - " + date.AddDays(20 - a).ToString("M");
 
             label3WeekEnd.Text = $"Ожидаемая зарплата  \n~{ex.Result(date2)} руб~";
@@ -70,12 +70,8 @@ namespace PrimerZP
         private void button2_Click(object sender, EventArgs e)
         {
             // проверка, не открыто ли другое окно
-            if (panel2.Visible == true)
-            {
-                panel2.Visible = false;
-                button3.Visible = false;
-            }
-            close2.Visible = true; panel1.Visible = true;
+            CheckOpen(); 
+            close2.Visible = true; panel1.Visible = true; check = true;
         }
 
         // !закрыть! под "показать зарплату"
@@ -83,12 +79,15 @@ namespace PrimerZP
         {
             panel2.Visible = false;
             button3.Visible = false;
+            check = false;
         }
 
         // !закрыть! под "Внести новый монтаж"
         private void close2_Click(object sender, EventArgs e)
         {
-            close2.Visible = false; panel1.Visible = false;
+            close2.Visible = false; 
+            panel1.Visible = false;
+            check = false;
         }
 
         // кнопка "Сохранить" при внесении монтажа
@@ -101,11 +100,59 @@ namespace PrimerZP
             Excels ex = new Excels();
             ex.EnterData(line);
         }
+
         // кнопка настроек
         private void settings_Click(object sender, EventArgs e)
         {
             Settings set = new Settings();
             set.ShowDialog();
+        }
+
+        // кнопка "Показать монтажи"
+        private void buttonMontages_Click(object sender, EventArgs e)
+        {
+            CheckOpen();
+            panelShowMont.Visible = true; buttonEscMontages.Visible = true; check = true;
+
+
+            DateTime date = DateTime.Now;          // дата для получения текущей недели
+            date = date.AddDays(-7);
+            double a = (int)date.DayOfWeek; a--; a = -a;
+
+            // Устанавливаем значение полей "прошлой недели"
+            label6.Text = "\t\tПрошлая неделя\n" + date.AddDays(a).ToString("M") +
+                                " - " + date.AddDays(6 + a).ToString("M");
+
+            for (int i = 0; i < 7; i++)
+            {
+                DateMontages.Text += ex.FindMontage(date.AddDays(a + i));
+            }
+        }
+
+        // кнопка !Закрыть! при показе монтажей
+        private void buttonEscMontages_Click(object sender, EventArgs e)
+        {
+            panelShowMont.Visible = false; 
+            buttonEscMontages.Visible = false; 
+            check = false;
+            DateMontages.Text = "";
+        }
+
+        // проверка открытых окон
+        private void CheckOpen()
+        {
+            if (check == true)
+            {
+                panel1.Visible = false;
+                panel2.Visible = false;
+                button3.Visible = false;
+                close2.Visible = false;
+                buttonEscMontages.Visible = false;
+                panelShowMont.Visible = false; DateMontages.Text = "";
+                buttonEscMontages.Visible = false;
+
+                check = false;
+            }
         }
 
 

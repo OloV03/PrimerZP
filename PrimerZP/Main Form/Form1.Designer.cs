@@ -51,12 +51,18 @@
             this.label3WeekStart = new System.Windows.Forms.Label();
             this.label2WeekEnd = new System.Windows.Forms.Label();
             this.label2WeekStart = new System.Windows.Forms.Label();
+            this.panelShowMont = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.labelMotivation = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.settings = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.settings = new System.Windows.Forms.Button();
+            this.buttonMontages = new System.Windows.Forms.Button();
+            this.buttonEscMontages = new System.Windows.Forms.Button();
+            this.DateMontages = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelShowMont.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +71,7 @@
             this.button1.Location = new System.Drawing.Point(41, 87);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(233, 170);
+            this.button1.Size = new System.Drawing.Size(233, 110);
             this.button1.TabIndex = 0;
             this.button1.Text = "Показать зарплату";
             this.button1.UseVisualStyleBackColor = true;
@@ -73,10 +79,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(41, 356);
+            this.button2.Location = new System.Drawing.Point(41, 465);
             this.button2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(233, 177);
+            this.button2.Size = new System.Drawing.Size(233, 111);
             this.button2.TabIndex = 1;
             this.button2.Text = "Внести новый монтаж";
             this.button2.UseVisualStyleBackColor = true;
@@ -85,7 +91,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(165, 273);
+            this.button3.Location = new System.Drawing.Point(165, 206);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 34);
             this.button3.TabIndex = 3;
@@ -126,7 +132,7 @@
             // close2
             // 
             this.close2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold);
-            this.close2.Location = new System.Drawing.Point(165, 542);
+            this.close2.Location = new System.Drawing.Point(165, 595);
             this.close2.Name = "close2";
             this.close2.Size = new System.Drawing.Size(109, 34);
             this.close2.TabIndex = 5;
@@ -231,7 +237,7 @@
             this.panel2.Controls.Add(this.label2WeekStart);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(314, 35);
+            this.panel2.Location = new System.Drawing.Point(341, 35);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(341, 606);
             this.panel2.TabIndex = 7;
@@ -344,6 +350,24 @@
             this.label2WeekStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2WeekStart.Click += new System.EventHandler(this.label7_Click);
             // 
+            // panelShowMont
+            // 
+            this.panelShowMont.Controls.Add(this.DateMontages);
+            this.panelShowMont.Controls.Add(this.label6);
+            this.panelShowMont.Location = new System.Drawing.Point(16, 23);
+            this.panelShowMont.Name = "panelShowMont";
+            this.panelShowMont.Size = new System.Drawing.Size(317, 540);
+            this.panelShowMont.TabIndex = 12;
+            this.panelShowMont.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(42, 52);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 35);
+            this.label6.TabIndex = 0;
+            // 
             // labelMotivation
             // 
             this.labelMotivation.AutoSize = true;
@@ -367,6 +391,19 @@
             this.panel3.TabIndex = 9;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Bold);
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.Location = new System.Drawing.Point(582, -1);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(95, 30);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Фигнюшка";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // settings
             // 
             this.settings.BackColor = System.Drawing.SystemColors.HighlightText;
@@ -381,18 +418,37 @@
             this.settings.UseVisualStyleBackColor = false;
             this.settings.Click += new System.EventHandler(this.settings_Click);
             // 
-            // button4
+            // buttonMontages
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Bold);
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(582, -1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 30);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Фигнюшка";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonMontages.Location = new System.Drawing.Point(41, 273);
+            this.buttonMontages.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.buttonMontages.Name = "buttonMontages";
+            this.buttonMontages.Size = new System.Drawing.Size(233, 110);
+            this.buttonMontages.TabIndex = 10;
+            this.buttonMontages.Text = "Показать монтажи";
+            this.buttonMontages.UseVisualStyleBackColor = true;
+            this.buttonMontages.Click += new System.EventHandler(this.buttonMontages_Click);
+            // 
+            // buttonEscMontages
+            // 
+            this.buttonEscMontages.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEscMontages.Location = new System.Drawing.Point(165, 392);
+            this.buttonEscMontages.Name = "buttonEscMontages";
+            this.buttonEscMontages.Size = new System.Drawing.Size(109, 34);
+            this.buttonEscMontages.TabIndex = 11;
+            this.buttonEscMontages.Text = "Закрыть";
+            this.buttonEscMontages.UseVisualStyleBackColor = true;
+            this.buttonEscMontages.Visible = false;
+            this.buttonEscMontages.Click += new System.EventHandler(this.buttonEscMontages_Click);
+            // 
+            // DateMontages
+            // 
+            this.DateMontages.AutoSize = true;
+            this.DateMontages.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold);
+            this.DateMontages.Location = new System.Drawing.Point(42, 135);
+            this.DateMontages.Name = "DateMontages";
+            this.DateMontages.Size = new System.Drawing.Size(0, 35);
+            this.DateMontages.TabIndex = 13;
             // 
             // Main
             // 
@@ -400,15 +456,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(732, 680);
+            this.ClientSize = new System.Drawing.Size(733, 680);
+            this.Controls.Add(this.buttonEscMontages);
+            this.Controls.Add(this.buttonMontages);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.labelMotivation);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.close2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelShowMont);
             this.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -421,6 +480,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelShowMont.ResumeLayout(false);
+            this.panelShowMont.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -455,6 +516,11 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button settings;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonMontages;
+        private System.Windows.Forms.Button buttonEscMontages;
+        private System.Windows.Forms.Panel panelShowMont;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label DateMontages;
     }
 }
 

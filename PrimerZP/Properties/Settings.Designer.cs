@@ -25,7 +25,7 @@ namespace PrimerZP.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("75.000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("120.000")]
         public string goal {
             get {
                 return ((string)(this["goal"]));
