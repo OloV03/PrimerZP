@@ -114,24 +114,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Примерная зарплата.exe" size="50608">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Примерная зарплата.exe" size="51120">
       <assemblyIdentity name="Примерная зарплата" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HMHFUC0UU6uvJdvZ8LaMKLEabz1xvlz2n++T8b8NasI=</dsig:DigestValue>
+        <dsig:DigestValue>6HttctChwTGcXnCNzmdXda+R/3XoFifRzYOuokI8LN0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Jukov.txt" size="272">
+  <file name="Jukov.txt" size="422">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Z1D/42TjiH1HJZfxdDH1x5wBrGN+AQcWB98yrCdm3sQ=</dsig:DigestValue>
+      <dsig:DigestValue>ffoEaTo6hcsm/2YSg5cgSUrMOBMipgVONqNEK/BJrR4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Примерная зарплата.exe.config" size="1349">

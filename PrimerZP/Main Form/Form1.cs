@@ -155,6 +155,53 @@ namespace PrimerZP
             }
         }
 
+        private void label2_MouseHover(object sender, EventArgs e)
+        {
+            DateTime date = DateTime.Now;          
+            double a = (int)date.DayOfWeek; a--; a =  -a;
+            string text = "";
+            for (int i = 0; i < 7; i++)
+            {
+                text += ex.FindMontage(date.AddDays(a + i)); 
+            }
+            if (text == "")
+            {
+                text = "Нет монтажей";
+            }
+            toolTip1.SetToolTip(label2, text);
+        }
+
+        private void label2WeekEnd_MouseHover(object sender, EventArgs e)
+        {
+            DateTime date = DateTime.Now;
+            double a = (int)date.DayOfWeek; a--; a = -a;
+            string text = "";
+            for (int i = 0; i < 7; i++)
+            {
+                text += ex.FindMontage(date.AddDays(7 + a + i));
+            }
+            if (text == "")
+            {
+                text = "Нет монтажей";
+            }
+            toolTip1.SetToolTip(label2WeekEnd, text);
+        }
+
+        private void label3WeekEnd_MouseHover(object sender, EventArgs e)
+        {
+            DateTime date = DateTime.Now;
+            double a = (int)date.DayOfWeek; a--; a = -a;
+            string text = "";
+            for (int i = 0; i < 7; i++)
+            {
+                text += ex.FindMontage(date.AddDays(14 + a + i));
+            }
+            if (text == "")
+            {
+                text = "Нет монтажей";
+            }
+            toolTip1.SetToolTip(label3WeekEnd, text);
+        }
 
 
 
@@ -228,6 +275,11 @@ namespace PrimerZP
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelHint1_Click(object sender, EventArgs e)
         {
 
         }

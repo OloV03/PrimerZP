@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -52,6 +53,7 @@
             this.label2WeekEnd = new System.Windows.Forms.Label();
             this.label2WeekStart = new System.Windows.Forms.Label();
             this.panelShowMont = new System.Windows.Forms.Panel();
+            this.DateMontages = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.labelMotivation = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -59,7 +61,7 @@
             this.settings = new System.Windows.Forms.Button();
             this.buttonMontages = new System.Windows.Forms.Button();
             this.buttonEscMontages = new System.Windows.Forms.Button();
-            this.DateMontages = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelShowMont.SuspendLayout();
@@ -128,6 +130,7 @@
             this.label2.Text = "2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.label2.MouseHover += new System.EventHandler(this.label2_MouseHover);
             // 
             // close2
             // 
@@ -293,6 +296,7 @@
             this.labelHint1.TabIndex = 9;
             this.labelHint1.Text = "1";
             this.labelHint1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelHint1.Click += new System.EventHandler(this.labelHint1_Click);
             // 
             // label3WeekEnd
             // 
@@ -306,6 +310,7 @@
             this.label3WeekEnd.Text = "2";
             this.label3WeekEnd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3WeekEnd.Click += new System.EventHandler(this.label3WeekEnd_Click);
+            this.label3WeekEnd.MouseHover += new System.EventHandler(this.label3WeekEnd_MouseHover);
             // 
             // label3WeekStart
             // 
@@ -333,6 +338,7 @@
             this.label2WeekEnd.TabIndex = 6;
             this.label2WeekEnd.Text = "2";
             this.label2WeekEnd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2WeekEnd.MouseHover += new System.EventHandler(this.label2WeekEnd_MouseHover);
             // 
             // label2WeekStart
             // 
@@ -359,6 +365,15 @@
             this.panelShowMont.Size = new System.Drawing.Size(317, 540);
             this.panelShowMont.TabIndex = 12;
             this.panelShowMont.Visible = false;
+            // 
+            // DateMontages
+            // 
+            this.DateMontages.AutoSize = true;
+            this.DateMontages.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold);
+            this.DateMontages.Location = new System.Drawing.Point(42, 135);
+            this.DateMontages.Name = "DateMontages";
+            this.DateMontages.Size = new System.Drawing.Size(0, 35);
+            this.DateMontages.TabIndex = 13;
             // 
             // label6
             // 
@@ -441,15 +456,6 @@
             this.buttonEscMontages.Visible = false;
             this.buttonEscMontages.Click += new System.EventHandler(this.buttonEscMontages_Click);
             // 
-            // DateMontages
-            // 
-            this.DateMontages.AutoSize = true;
-            this.DateMontages.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold);
-            this.DateMontages.Location = new System.Drawing.Point(42, 135);
-            this.DateMontages.Name = "DateMontages";
-            this.DateMontages.Size = new System.Drawing.Size(0, 35);
-            this.DateMontages.TabIndex = 13;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 32F);
@@ -521,6 +527,7 @@
         private System.Windows.Forms.Panel panelShowMont;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label DateMontages;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
